@@ -64,7 +64,7 @@ function Home() {
     <Element name="home">
       <div>
         {/* Hero Section */}
-        <div className="min-h-screen bg-blue-50 p-10 flex flex-col-reverse md:flex-row items-center justify-between">
+        <div className="min-h-screen bg-blue-50 p-10 flex flex-col md:flex-row items-center justify-between">
           {/* Left Content */}
           <div className="flex-1 space-y-6">
             <h1
@@ -83,6 +83,16 @@ function Home() {
             >
               I am Abdul Baseer
             </h1>
+
+            {/* Mobile Image (between heading and subtitle) */}
+            <div className="block md:hidden mt-6 flex justify-center" data-aos="fade-left">
+              <img
+                src="/image.png"
+                alt="Developer at desk"
+                className="w-3/4 max-w-xs"
+              />
+            </div>
+
             <h2
               className="text-2xl italic font-semibold text-blue-600"
               data-aos="fade-down"
@@ -135,9 +145,9 @@ function Home() {
             </a>
           </div>
 
-          {/* Right Image */}
+          {/* Desktop Image (shown on md and larger screens) */}
           <div
-            className="flex-1 mt-10 md:mt-0 flex justify-center"
+            className="hidden md:flex flex-1 mt-10 md:mt-0 justify-center"
             data-aos="fade-left"
             data-aos-delay="500"
           >

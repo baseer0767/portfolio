@@ -76,14 +76,22 @@ function Experience() {
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
-            {/* Duration in Top-Right (mobile-safe) */}
-            <p className="absolute top-4 right-6 text-sm text-blue-600 italic text-right sm:text-left whitespace-nowrap">
+            {/* Title */}
+            <h3 className="text-xl sm:text-2xl font-bold text-blue-800 break-words pr-0 sm:pr-16">
+              {exp.role} @ {exp.company}
+            </h3>
+
+            {/* Duration: mobile below title */}
+            <p className="text-sm text-blue-600 italic mt-1 block sm:hidden">
               {exp.duration}
             </p>
 
-            <h3 className="text-xl sm:text-2xl font-bold text-blue-800 pr-16 break-words">
-              {exp.role} @ {exp.company}
-            </h3>
+            {/* Duration: desktop top-right */}
+            <p className="text-sm text-blue-600 italic absolute top-4 right-6 hidden sm:block">
+              {exp.duration}
+            </p>
+
+            {/* Description */}
             <p className="text-gray-700 mt-4 text-sm sm:text-base">
               {exp.description}
             </p>
