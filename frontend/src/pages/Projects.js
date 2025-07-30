@@ -49,13 +49,8 @@ function Projects() {
   return (
     <section id="projects" className="bg-blue-50 py-16 px-4 sm:px-6">
       {/* Header */}
-      <div
-        className="max-w-6xl mx-auto text-center mb-12"
-        data-aos="fade-down"
-      >
-        <h2 className="text-4xl font-extrabold text-blue-900 mb-4">
-          Projects
-        </h2>
+      <div className="max-w-6xl mx-auto text-center mb-12" data-aos="fade-down">
+        <h2 className="text-4xl font-extrabold text-blue-900 mb-4">Projects</h2>
         <p className="text-gray-700 max-w-2xl mx-auto text-base sm:text-lg">
           Highlights of my technical experience across machine learning,
           embedded systems, and full-stack platforms.
@@ -71,7 +66,8 @@ function Projects() {
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
-            <div>
+            {/* Project Content */}
+            <div className="flex-grow">
               <a
                 href={project.github}
                 target="_blank"
@@ -80,11 +76,12 @@ function Projects() {
               >
                 {project.title}
               </a>
-              <p className="text-gray-700 text-sm sm:text-base">
+              <p className="text-gray-700 text-sm sm:text-base mt-2">
                 {project.description}
               </p>
             </div>
 
+            {/* Tags + Button */}
             <div className="mt-6 flex flex-col gap-3">
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech, i) => (

@@ -64,7 +64,7 @@ function Home() {
     <Element name="home">
       <div>
         {/* Hero Section */}
-        <div className="min-h-screen bg-blue-50 p-10 flex flex-col md:flex-row items-center justify-between">
+        <div className="min-h-screen bg-blue-50 p-10 flex flex-col-reverse md:flex-row items-center justify-between">
           {/* Left Content */}
           <div className="flex-1 space-y-6">
             <h1
