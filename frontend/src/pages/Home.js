@@ -111,7 +111,7 @@ function Home() {
             >
               I’m a tech enthusiast and developer with a strong foundation in AI/ML,
               embedded systems, and full-stack web development. Skilled in Python,
-              C, JavaScript, and frameworks like Django and Node.js, I enjoy building
+              C, JavaScript, React, Node.js and frameworks like Django and Django Rest, I enjoy building
               efficient, scalable solutions that bridge hardware and software.
               With experience in tools like TensorFlow, OpenCV, and ESP32, I bring
               a detail-oriented, problem-solving mindset and a passion for continuous
