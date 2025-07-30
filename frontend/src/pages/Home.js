@@ -15,7 +15,7 @@ import { Element, scroller } from "react-scroll";
 // Typing subtitles
 const subtitles = [
   "Computer Information System Engineer",
-  "Full-Stack Developer",
+  "Backend Developer",
   "AI & Machine Learning Enthusiast",
   "IoT Architect & Embedded Solutions Designer",
 ];
